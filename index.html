@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v1.03.0 -->
+<!-- v1.05.0 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -37,25 +37,79 @@
         Andrew<br><em>Gabriel</em>
       </h1>
 
-      <div class="hero__bottom">
-        <p class="hero__role">
-          Engineering depth, product strategy, cross-cultural fluency — built across
-          three countries and two disciplines.
-        </p>
-        <div class="hero__meta">
-          <p>Based in Dossenheim, Germany</p>
-          <p>
-            <a href="mailto:andrew.emad.a@gmail.com">andrew.emad.a@gmail.com</a>
-          </p>
-          <p>
-            <a href="https://www.linkedin.com/in/ag1992/" target="_blank" rel="noopener">
-              linkedin.com/in/ag1992
-            </a>
-          </p>
-        </div>
+      <span class="hero__index" aria-hidden="true">01</span>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- =====================================================================
+       Journey — Five-step timeline
+  ====================================================================== -->
+  <section class="section" id="journey" aria-labelledby="journey-title">
+    <div class="wrap">
+      <div class="section__header">
+        <h2 class="section__title" id="journey-title"><em>Milestones</em></h2>
       </div>
 
-      <span class="hero__index" aria-hidden="true">01</span>
+      <ol class="timeline" role="list" data-reveal>
+
+        <li class="timeline__step">
+          <div class="timeline__frame">
+            <span class="timeline__fallback" aria-hidden="true">6</span>
+            <img src="images/q6.jpg" alt="" loading="lazy"
+                 onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
+          </div>
+          <p class="timeline__year">2012</p>
+          <h3 class="timeline__title">Science Talker</h3>
+          <p class="timeline__text">FameLab national finalist — communicating complex science with clarity and stage presence.</p>
+        </li>
+
+        <li class="timeline__step">
+          <div class="timeline__frame">
+            <span class="timeline__fallback" aria-hidden="true">7</span>
+            <img src="images/q7.jpg" alt="" loading="lazy"
+                 onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
+          </div>
+          <p class="timeline__year">2016</p>
+          <h3 class="timeline__title">BSc Mechanical Engineering</h3>
+          <p class="timeline__text">Universität Duisburg-Essen — where the engineering foundation was laid.</p>
+        </li>
+
+        <li class="timeline__step">
+          <div class="timeline__frame">
+            <span class="timeline__fallback" aria-hidden="true">8</span>
+            <img src="images/q8.jpg" alt="" loading="lazy"
+                 onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
+          </div>
+          <p class="timeline__year">2021</p>
+          <h3 class="timeline__title">ESN Organizer</h3>
+          <p class="timeline__text">Erasmus Student Network, TU Dortmund — organising events for incoming exchange students.</p>
+        </li>
+
+        <li class="timeline__step">
+          <div class="timeline__frame">
+            <span class="timeline__fallback" aria-hidden="true">9</span>
+            <img src="images/q9.jpg" alt="" loading="lazy"
+                 onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
+          </div>
+          <p class="timeline__year">2024</p>
+          <h3 class="timeline__title">MSC Industrial Engineering</h3>
+          <p class="timeline__text">TU Dortmund — bridging engineering with business strategy and systems thinking.</p>
+        </li>
+
+        <li class="timeline__step">
+          <div class="timeline__frame">
+            <span class="timeline__fallback" aria-hidden="true">10</span>
+            <img src="images/q10.jpg" alt="" loading="lazy"
+                 onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
+          </div>
+          <p class="timeline__year">2026</p>
+          <h3 class="timeline__title">Team Captain</h3>
+          <p class="timeline__text">Team captain of Herren 2 — leading both on and off the court.</p>
+        </li>
+
+      </ol>
     </div>
   </section>
 
@@ -94,7 +148,6 @@
   <section class="section" id="about" aria-labelledby="about-title">
     <div class="wrap">
       <div class="section__header">
-        <span class="section__num">01 —</span>
         <h2 class="section__title" id="about-title">About</h2>
       </div>
 
@@ -102,23 +155,16 @@
         <p class="about__lead">
           I bridge the gap between technical engineering and strategic product thinking.
           Starting as a simulation engineer for automotive OEMs, I transitioned into
-          product management — bringing a rare combination of <em>analytical rigour,
-          systems thinking,</em> and commercial awareness to every product I build.
+          product management — bringing a combination of,
+          systems thinking,</em> and commercial awareness </em> to every product I build.
         </p>
 
         <div class="about__sidebar">
           <div class="about__sidebar-item">
-            <p class="about__sidebar-label">Nationality</p>
-            <p class="about__sidebar-value">German</p>
-          </div>
-          <div class="about__sidebar-item">
             <p class="about__sidebar-label">Languages</p>
             <p class="about__sidebar-value">Arabic · German · English · Spanish</p>
           </div>
-          <div class="about__sidebar-item">
-            <p class="about__sidebar-label">Current employer</p>
-            <p class="about__sidebar-value">Winkler AG, St. Leon-Rot</p>
-          </div>
+
           <div class="about__sidebar-item">
             <p class="about__sidebar-label">Background</p>
             <p class="about__sidebar-value">
@@ -139,7 +185,6 @@
   <section class="section" id="experience" aria-labelledby="exp-title">
     <div class="wrap">
       <div class="section__header">
-        <span class="section__num">02 —</span>
         <h2 class="section__title" id="exp-title">Work <em>Experience</em></h2>
       </div>
 
@@ -231,7 +276,6 @@
   <section class="section section--alt" id="education" aria-labelledby="edu-title">
     <div class="wrap">
       <div class="section__header">
-        <span class="section__num">03 —</span>
         <h2 class="section__title" id="edu-title"><em>Education</em></h2>
       </div>
 
@@ -275,7 +319,6 @@
   <section class="section" id="skills" aria-labelledby="skills-title">
     <div class="wrap">
       <div class="section__header">
-        <span class="section__num">04 —</span>
         <h2 class="section__title" id="skills-title">Skills &amp; <em>Expertise</em></h2>
       </div>
 
@@ -286,12 +329,12 @@
           <p class="skill-group__label">Product &amp; Strategy</p>
           <ul class="skill-group__items" role="list">
             <li class="skill-item skill-item--strong">Product Strategy &amp; Roadmapping</li>
-            <li class="skill-item skill-item--strong">Go-to-Market Execution</li>
-            <li class="skill-item skill-item--strong">Pricing &amp; Positioning</li>
-            <li class="skill-item">Product Lifecycle Management</li>
+            <li class="skill-item skill-item--strong">Product Lifecycle Management</li>
+	    <li class="skill-item skill-item--strong">PRD</li>
+	    <li class="skill-item skill-item--strong">Sales Training</li>
             <li class="skill-item">Epics &amp; User Stories (Jira)</li>
             <li class="skill-item">Confluence Documentation</li>
-            <li class="skill-item">Aha! Roadmapping</li>
+            <li class="skill-item">Roadmapping</li>
           </ul>
         </div>
 
@@ -299,12 +342,11 @@
         <div class="skill-group">
           <p class="skill-group__label">Engineering &amp; Tools</p>
           <ul class="skill-group__items" role="list">
-            <li class="skill-item skill-item--strong">Adams View (MBS Simulation)</li>
-            <li class="skill-item skill-item--strong">Python (Pandas)</li>
+            <li class="skill-item skill-item--strong">Claude</li>
+            <li class="skill-item skill-item--strong">Python</li>
             <li class="skill-item">ProAlpha ERP</li>
-            <li class="skill-item">Microsoft Office Suite</li>
+            <li class="skill-item">Microsoft Office</li>
             <li class="skill-item">Figma</li>
-            <li class="skill-item">CAD / CAE Collaboration</li>
           </ul>
         </div>
 
@@ -368,7 +410,6 @@
   <section class="section section--alt" id="extras" aria-labelledby="extras-title">
     <div class="wrap">
       <div class="section__header">
-        <span class="section__num">05 —</span>
         <h2 class="section__title" id="extras-title">Credentials &amp; <em>Community</em></h2>
       </div>
 
@@ -442,7 +483,7 @@
     <div class="wrap footer__inner">
       <p class="footer__copy">© 2026 Andrew Gabriel</p>
 
-      <p class="footer__version">v1.03.0</p>
+      <p class="footer__version">v1.05.0</p>
     </div>
   </footer>
 
