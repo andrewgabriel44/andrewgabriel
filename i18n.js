@@ -20,7 +20,7 @@
   var DE = {
 
     /* Meta + navigation */
-    'meta.description': 'Andrew Gabriel — Internationaler Produktmanager. Ingenieurhintergrund, strategische Weitsicht, mehrsprachig.',
+    'meta.description': 'Andrew Gabriel — Produktmanager. Ingenieurhintergrund, strategische Weitsicht, mehrsprachig.',
     'nav.aria':       'Hauptnavigation',
     'lang.aria':      'Sprache',
     'nav.quiz':       'Quiz',
@@ -113,15 +113,13 @@
 
     'exp1.period': 'Jan 2025<br>Heute',
     'exp1.badge':  'Aktuell',
-    'exp1.role':   'Internationaler Produktmanager',
+    'exp1.role':   'Produktmanager',
     'exp1.duties':
       '<li>Steuerung der Markteinführung von 3 neuen Produkten inkl. Preisstrategie im Rahmen der Go-to-Market-Planung.</li>' +
       '<li>Erstellung und Veröffentlichung von 2 Produktkatalogen zur Unterstützung von Marketing und Vertrieb.</li>' +
       '<li>Durchführung von Sales-Trainings im Sinne von Sales Enablement zur erfolgreichen Einführung neuer Produkte.</li>' +
-      '<li>Entwicklung der Produktvision und Produktmission inkl. Value Proposition und Produktpositionierung als Grundlage für Produktstrategie, Roadmap und Lifecycle-Management.</li>' +
       '<li>Unterstützung von Vertrieb und Kundenservice bei der Angebotserstellung unter Berücksichtigung von Kundenbedürfnissen und Nutzererlebnis.</li>' +
       '<li>Pflege von Produkten und Produktserien im ERP-System (ProAlpha) im Rahmen des Produktlebenszyklus-Managements.</li>' +
-      '<li>Optimierung von Projektmanagement-Prozessen zur Steigerung von Effizienz und Transparenz, inkl. Automatisierung von Abläufen; Pflege von Epics und User Stories in Jira und Confluence in enger Zusammenarbeit mit interdisziplinären Teams.</li>' +
       '<li>Abstimmung mit Business-Stakeholdern zur Übersetzung von Geschäftsanforderungen in Produktstrategie und Roadmap.</li>',
 
     'exp2.period': 'Jun 2022<br>Apr 2024',
