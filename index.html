@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v1.05.0 -->
+<!-- v1.06.0 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,16 +13,22 @@
   <!-- =====================================================================
        Navigation
   ====================================================================== -->
-  <nav class="nav" aria-label="Main navigation">
+  <nav class="nav" aria-label="Main navigation" data-i18n-label="nav.aria">
     <div class="wrap nav__inner">
       <a class="nav__mark" href="#top">AG</a>
       <ul class="nav__links" role="list">
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#experience">Work</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#quiz" data-i18n="nav.quiz">Quiz</a></li>
+        <li><a href="#videos" data-i18n="nav.videos">Videos</a></li>
+        <li><a href="#experience" data-i18n="nav.work">Work</a></li>
+        <li><a href="#education" data-i18n="nav.education">Education</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-label="lang.aria">
+        <button type="button" class="lang-switch__btn is-active" data-lang="en" lang="en" title="English" aria-pressed="true">EN</button>
+        <button type="button" class="lang-switch__btn" data-lang="de" lang="de" title="Deutsch" aria-pressed="false">DE</button>
+      </div>
     </div>
   </nav>
 
@@ -31,7 +37,7 @@
   ====================================================================== -->
   <section class="hero" id="top" aria-label="Introduction">
     <div class="wrap">
-      <p class="hero__kicker">International Product Manager</p>
+      <p class="hero__kicker" data-i18n="hero.kicker">International Product Manager</p>
 
       <h1 class="hero__name">
         Andrew<br><em>Gabriel</em>
@@ -49,7 +55,7 @@
   <section class="section" id="journey" aria-labelledby="journey-title">
     <div class="wrap">
       <div class="section__header">
-        <h2 class="section__title" id="journey-title"><em>Milestones</em></h2>
+        <h2 class="section__title" id="journey-title" data-i18n="journey.title"><em>Milestones</em></h2>
       </div>
 
       <ol class="timeline" role="list" data-reveal>
@@ -61,8 +67,8 @@
                  onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
           </div>
           <p class="timeline__year">2012</p>
-          <h3 class="timeline__title">Science Talker</h3>
-          <p class="timeline__text">FameLab national finalist — communicating complex science with clarity and stage presence.</p>
+          <h3 class="timeline__title" data-i18n="tl1.title">Science Talker</h3>
+          <p class="timeline__text" data-i18n="tl1.text">FameLab Egypt — Top 10 of 250+ participants, explaining science in under 3 minutes.</p>
         </li>
 
         <li class="timeline__step">
@@ -72,8 +78,8 @@
                  onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
           </div>
           <p class="timeline__year">2016</p>
-          <h3 class="timeline__title">BSc Mechanical Engineering</h3>
-          <p class="timeline__text">Universität Duisburg-Essen — where the engineering foundation was laid.</p>
+          <h3 class="timeline__title" data-i18n="tl2.title">BSc Mechanical Engineering</h3>
+          <p class="timeline__text" data-i18n="tl2.text">Universität Duisburg-Essen — where the engineering foundation was laid.</p>
         </li>
 
         <li class="timeline__step">
@@ -83,8 +89,8 @@
                  onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
           </div>
           <p class="timeline__year">2021</p>
-          <h3 class="timeline__title">ESN Organizer</h3>
-          <p class="timeline__text">Erasmus Student Network, TU Dortmund — organising events for incoming exchange students.</p>
+          <h3 class="timeline__title" data-i18n="tl3.title">ESN Organizer</h3>
+          <p class="timeline__text" data-i18n="tl3.text">Erasmus Student Network, TU Dortmund — organising events for incoming exchange students.</p>
         </li>
 
         <li class="timeline__step">
@@ -94,8 +100,8 @@
                  onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
           </div>
           <p class="timeline__year">2024</p>
-          <h3 class="timeline__title">MSC Industrial Engineering</h3>
-          <p class="timeline__text">TU Dortmund — bridging engineering with business strategy and systems thinking.</p>
+          <h3 class="timeline__title" data-i18n="tl4.title">MSC Industrial Engineering</h3>
+          <p class="timeline__text" data-i18n="tl4.text">TU Dortmund — bridging engineering with business strategy and systems thinking.</p>
         </li>
 
         <li class="timeline__step">
@@ -105,8 +111,8 @@
                  onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
           </div>
           <p class="timeline__year">2026</p>
-          <h3 class="timeline__title">Team Captain</h3>
-          <p class="timeline__text">Team captain of Herren 2 — leading both on and off the court.</p>
+          <h3 class="timeline__title" data-i18n="tl5.title">Team Captain</h3>
+          <p class="timeline__text" data-i18n="tl5.text">Team captain of Herren 2 — leading both on and off the court.</p>
         </li>
 
       </ol>
@@ -121,8 +127,8 @@
   <section class="section quiz" id="quiz" aria-labelledby="quiz-title">
     <div class="wrap">
       <div class="quiz__intro" data-reveal>
-        <span class="quiz__kicker">Interactive</span>
-        <h2 class="quiz__title" id="quiz-title">Know Andrew in <em>5 Questions</em></h2>
+        <span class="quiz__kicker" data-i18n="quiz.kicker">Interactive</span>
+        <h2 class="quiz__title" id="quiz-title" data-i18n="quiz.title">Know Andrew in <em>5 Questions</em></h2>
       </div>
 
       <div class="quiz__card" data-reveal>
@@ -148,32 +154,90 @@
   <section class="section" id="about" aria-labelledby="about-title">
     <div class="wrap">
       <div class="section__header">
-        <h2 class="section__title" id="about-title">About</h2>
+        <h2 class="section__title" id="about-title" data-i18n="about.title">About</h2>
       </div>
 
       <div class="about__grid" data-reveal>
-        <p class="about__lead">
+        <p class="about__lead" data-i18n="about.lead">
           I bridge the gap between technical engineering and strategic product thinking.
           Starting as a simulation engineer for automotive OEMs, I transitioned into
-          product management — bringing a combination of,
-          systems thinking,</em> and commercial awareness </em> to every product I build.
+          product management — bringing a combination of <em>systems thinking</em>
+          and commercial awareness to every product I build.
         </p>
 
         <div class="about__sidebar">
           <div class="about__sidebar-item">
-            <p class="about__sidebar-label">Languages</p>
-            <p class="about__sidebar-value">Arabic · German · English · Spanish</p>
+            <p class="about__sidebar-label" data-i18n="about.langLabel">Languages</p>
+            <p class="about__sidebar-value" data-i18n="about.langValue">Arabic · German · English · Spanish</p>
           </div>
 
           <div class="about__sidebar-item">
-            <p class="about__sidebar-label">Background</p>
-            <p class="about__sidebar-value">
-              MSc Industrial Engineering<br />
-              BSc Mechanical Engineering
-            </p>
+            <p class="about__sidebar-label" data-i18n="about.bgLabel">Background</p>
+            <p class="about__sidebar-value" data-i18n="about.bgValue">MSc Industrial Engineering<br />BSc Mechanical Engineering</p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- =====================================================================
+       Videos — click-to-play (player loads only after the click)
+  ====================================================================== -->
+  <section class="section" id="videos" aria-labelledby="videos-title">
+    <div class="wrap">
+      <div class="section__header">
+        <h2 class="section__title" id="videos-title" data-i18n="videos.title"><em>Videos</em></h2>
+      </div>
+
+      <div class="videos__grid" data-reveal>
+
+        <!-- FameLab (YouTube) -->
+        <article class="video-card" data-video="youtube" data-video-id="KvMISwmYmuY" data-video-start="9">
+          <div class="video-card__frame">
+            <div class="video-card__placeholder" aria-hidden="true">
+              <span>01</span><span>Image: images/video1.jpg</span>
+            </div>
+            <img src="images/video1.jpg" alt="" loading="lazy"
+                 onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
+            <button type="button" class="video-card__play" data-video-play
+                    aria-label="Play video: FameLab Competition" data-i18n-label="v1.play">
+              <span class="video-card__icon" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="video-card__body">
+            <h3 class="video-card__title" data-i18n="v1.title">FameLab Competition</h3>
+            <p class="video-card__text" data-i18n="v1.text">Presenting a scientific topic in under 3 minutes — Top 10 of 250+ participants.</p>
+            <a class="video-card__link" href="https://www.youtube.com/watch?v=KvMISwmYmuY&amp;t=9s"
+               target="_blank" rel="noopener" data-i18n="v1.link">Watch on YouTube ↗</a>
+          </div>
+        </article>
+
+        <!-- Self-introduction (Google Drive) -->
+        <article class="video-card" data-video="drive" data-video-id="149nrauEiaInSsGOX4PfxBzFz2uDl2glp">
+          <div class="video-card__frame">
+            <div class="video-card__placeholder" aria-hidden="true">
+              <span>02</span><span>Image: images/video2.jpg</span>
+            </div>
+            <img src="images/video2.jpg" alt="" loading="lazy"
+                 onerror="this.remove()" onload="this.previousElementSibling.style.display='none'" />
+            <button type="button" class="video-card__play" data-video-play
+                    aria-label="Play video: Introducing Myself" data-i18n-label="v2.play">
+              <span class="video-card__icon" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="video-card__body">
+            <h3 class="video-card__title" data-i18n="v2.title">Introducing Myself</h3>
+            <p class="video-card__text" data-i18n="v2.text">A short personal introduction.</p>
+            <a class="video-card__link" href="https://drive.google.com/file/d/149nrauEiaInSsGOX4PfxBzFz2uDl2glp/view?usp=sharing"
+               target="_blank" rel="noopener" data-i18n="v2.link">Open on Google Drive ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="videos__note" data-i18n="videos.note">Clicking a video loads it from YouTube / Google Drive.</p>
     </div>
   </section>
 
@@ -185,7 +249,7 @@
   <section class="section" id="experience" aria-labelledby="exp-title">
     <div class="wrap">
       <div class="section__header">
-        <h2 class="section__title" id="exp-title">Work <em>Experience</em></h2>
+        <h2 class="section__title" id="exp-title" data-i18n="exp.title">Work <em>Experience</em></h2>
       </div>
 
       <div class="experience__list">
@@ -193,22 +257,24 @@
         <!-- Winkler AG -->
         <article class="exp-entry exp-entry--current" data-reveal>
           <div class="exp-entry__left">
-            <p class="exp-entry__period">Jan 2025<br>Present</p>
+            <p class="exp-entry__period" data-i18n="exp1.period">Jan 2025<br>Present</p>
             <p class="exp-entry__company">
               Winkler AG
-              <span class="badge-current">Now</span>
+              <span class="badge-current" data-i18n="exp1.badge">Now</span>
             </p>
             <p class="exp-entry__location">St. Leon-Rot</p>
           </div>
           <div class="exp-entry__right">
-            <p class="exp-entry__role">International Product Manager</p>
-            <ul class="exp-entry__duties">
-              <li>Led go-to-market launches for 3 new products, including full pricing strategy and market positioning.</li>
-              <li>Created and published 2 product catalogs to support marketing and sales across international markets.</li>
-              <li>Defined product vision and mission as the foundation for strategy and roadmap planning.</li>
-              <li>Delivered sales trainings to enable successful product introductions across the team.</li>
-              <li>Managed product lifecycle and series data in the company ERP system (ProAlpha).</li>
-              <li>Streamlined product management processes by writing Epics and User Stories in Jira and Confluence.</li>
+            <p class="exp-entry__role" data-i18n="exp1.role">International Product Manager</p>
+            <ul class="exp-entry__duties" data-i18n="exp1.duties">
+              <li>Managed the market launch of 3 new products, including pricing strategy and go-to-market planning.</li>
+              <li>Created and published 2 product catalogs to support marketing and sales.</li>
+              <li>Conducted sales trainings (sales enablement) to ensure the successful launch of new products.</li>
+              <li>Developed the product vision and mission, including value proposition and positioning, as the foundation for product strategy, roadmap and lifecycle management.</li>
+              <li>Supported sales and customer service with quotations, taking customer needs and user experience into account.</li>
+              <li>Managed and maintained products and product series in the ERP system (ProAlpha) as part of product lifecycle management.</li>
+              <li>Optimized product management processes for efficiency and transparency, including workflow automation; wrote epics and user stories in Jira and Confluence, translating requirements into actionable backlog items in cross-functional collaboration.</li>
+              <li>Aligned with business stakeholders to translate business requirements into product strategy and roadmap.</li>
             </ul>
           </div>
         </article>
@@ -216,15 +282,15 @@
         <!-- TU Dortmund Research -->
         <article class="exp-entry" data-reveal>
           <div class="exp-entry__left">
-            <p class="exp-entry__period">Jun 2022<br>Apr 2024</p>
+            <p class="exp-entry__period" data-i18n="exp2.period">Jun 2022<br>Apr 2024</p>
             <p class="exp-entry__company">TU Dortmund</p>
             <p class="exp-entry__location">Dortmund</p>
           </div>
           <div class="exp-entry__right">
-            <p class="exp-entry__role">Research Assistant — Supply Chain &amp; Logistics</p>
-            <ul class="exp-entry__duties">
-              <li>Conducted literature reviews spanning strategic &amp; operational procurement, SCM, and digital supply chain technologies (AI, Blockchain, IoT, ERP).</li>
-              <li>Performed data analysis and visualization with Python (Pandas) to surface key insights from expert interviews.</li>
+            <p class="exp-entry__role" data-i18n="exp2.role">Research Assistant — Chair of Enterprise Logistics</p>
+            <ul class="exp-entry__duties" data-i18n="exp2.duties">
+              <li>Conducted literature research on strategic and operational procurement and Supply Chain Management.</li>
+              <li>Performed data analysis and analytics with visualization in Python (Pandas) to derive key insights from expert interviews.</li>
             </ul>
           </div>
         </article>
@@ -232,17 +298,17 @@
         <!-- Brose -->
         <article class="exp-entry" data-reveal>
           <div class="exp-entry__left">
-            <p class="exp-entry__period">Jul 2018<br>Sep 2021</p>
+            <p class="exp-entry__period" data-i18n="exp3.period">Jul 2018<br>Sep 2021</p>
             <p class="exp-entry__company">Brose Fahrzeugteile</p>
             <p class="exp-entry__location">Wuppertal</p>
           </div>
           <div class="exp-entry__right">
-            <p class="exp-entry__role">Simulation Engineer</p>
-            <ul class="exp-entry__duties">
-              <li>Built and validated multibody simulation models in Adams View for 5+ automotive OEM customers.</li>
-              <li>Coordinated simulation workflows end-to-end, from planning through execution.</li>
-              <li>Reduced model setup time by 10% by implementing automation scripts.</li>
-              <li>Identified and resolved modelling issues to maintain compliance with product and simulation specifications.</li>
+            <p class="exp-entry__role" data-i18n="exp3.role">CAE Simulation Engineer</p>
+            <ul class="exp-entry__duties" data-i18n="exp3.duties">
+              <li>Coordinated simulations from planning to implementation, leading complex initiatives across teams.</li>
+              <li>Built and validated new simulation models in Adams View for 5+ OEMs.</li>
+              <li>Identified and resolved modeling issues to ensure compliance with product and simulation specifications.</li>
+              <li>Reduced model build time by 10% by implementing automation scripts to optimize the model build process.</li>
             </ul>
           </div>
         </article>
@@ -250,16 +316,16 @@
         <!-- Brunel -->
         <article class="exp-entry" data-reveal>
           <div class="exp-entry__left">
-            <p class="exp-entry__period">Feb 2017<br>Jul 2018</p>
+            <p class="exp-entry__period" data-i18n="exp4.period">Feb 2017<br>Jul 2018</p>
             <p class="exp-entry__company">Brunel GmbH</p>
             <p class="exp-entry__location">Wuppertal</p>
           </div>
           <div class="exp-entry__right">
-            <p class="exp-entry__role">Simulation Engineer</p>
-            <ul class="exp-entry__duties">
-              <li>Executed and validated 40+ simulation runs in a single year, ensuring rigorous technical accuracy.</li>
-              <li>Produced documentation and communicated results to 4 global sites, making simulation findings accessible to diverse engineering teams.</li>
-              <li>Collaborated with CAD and CAE teams to establish a unified product development workflow.</li>
+            <p class="exp-entry__role" data-i18n="exp4.role">CAE Simulation Engineer</p>
+            <ul class="exp-entry__duties" data-i18n="exp4.duties">
+              <li>Responsible for executing and validating 40+ simulation runs per year.</li>
+              <li>Prepared documentation and communicated results to 4 sites worldwide to ensure a shared understanding of simulation results, working in a global organization with stakeholder alignment.</li>
+              <li>Collaborated cross-functionally with CAD and CAE teams to establish a unified product development process.</li>
             </ul>
           </div>
         </article>
@@ -276,35 +342,35 @@
   <section class="section section--alt" id="education" aria-labelledby="edu-title">
     <div class="wrap">
       <div class="section__header">
-        <h2 class="section__title" id="edu-title"><em>Education</em></h2>
+        <h2 class="section__title" id="edu-title" data-i18n="edu.title"><em>Education</em></h2>
       </div>
 
       <div class="edu__grid" data-reveal>
 
         <div class="edu-card edu-card--accent">
-          <p class="edu-card__period">2021 – 2024</p>
+          <p class="edu-card__period">10/2021 – 07/2024</p>
           <p class="edu-card__school">Technische Universität Dortmund</p>
-          <p class="edu-card__degree">Master of Science — Industrial Engineering<br />(Wirtschaftsingenieurwesen)</p>
-          <p class="edu-card__grade">Grade 2.0</p>
+          <p class="edu-card__degree" data-i18n="edu1.degree">Master of Science — Industrial Engineering and Management</p>
+          <p class="edu-card__grade" data-i18n="edu1.grade">Grade 2.0</p>
         </div>
 
         <div class="edu-card edu-card--accent">
-          <p class="edu-card__period">2013 – 2016</p>
+          <p class="edu-card__period">10/2013 – 09/2016</p>
           <p class="edu-card__school">Universität Duisburg-Essen</p>
-          <p class="edu-card__degree">Bachelor of Science — Mechanical Engineering</p>
-          <p class="edu-card__grade">Grade 2.6</p>
+          <p class="edu-card__degree" data-i18n="edu2.degree">Bachelor of Science — Mechanical Engineering</p>
+          <p class="edu-card__grade" data-i18n="edu2.grade">Grade 2.6</p>
         </div>
 
         <div class="edu-card">
-          <p class="edu-card__period">2011 – 2013</p>
-          <p class="edu-card__school">Alexandria University</p>
-          <p class="edu-card__degree">Mechatronics Engineering (no degree)</p>
+          <p class="edu-card__period">09/2011 – 06/2013</p>
+          <p class="edu-card__school" data-i18n="edu3.school">Alexandria University</p>
+          <p class="edu-card__degree" data-i18n="edu3.degree">Bachelor's Program in Mechatronics (not completed)</p>
         </div>
 
         <div class="edu-card">
-          <p class="edu-card__period">2008 – 2011</p>
+          <p class="edu-card__period">09/2008 – 06/2011</p>
           <p class="edu-card__school">Pioneers International School</p>
-          <p class="edu-card__degree">IGCSE — Alexandria, Egypt</p>
+          <p class="edu-card__degree" data-i18n="edu4.degree">IGCSE — Alexandria, Egypt</p>
         </div>
 
       </div>
@@ -319,19 +385,19 @@
   <section class="section" id="skills" aria-labelledby="skills-title">
     <div class="wrap">
       <div class="section__header">
-        <h2 class="section__title" id="skills-title">Skills &amp; <em>Expertise</em></h2>
+        <h2 class="section__title" id="skills-title" data-i18n="skills.title">Skills &amp; <em>Expertise</em></h2>
       </div>
 
       <div class="skills__cols" data-reveal>
 
         <!-- Product & Strategy -->
         <div class="skill-group">
-          <p class="skill-group__label">Product &amp; Strategy</p>
-          <ul class="skill-group__items" role="list">
+          <p class="skill-group__label" data-i18n="sk1.label">Product &amp; Strategy</p>
+          <ul class="skill-group__items" role="list" data-i18n="sk1.items">
             <li class="skill-item skill-item--strong">Product Strategy &amp; Roadmapping</li>
             <li class="skill-item skill-item--strong">Product Lifecycle Management</li>
-	    <li class="skill-item skill-item--strong">PRD</li>
-	    <li class="skill-item skill-item--strong">Sales Training</li>
+            <li class="skill-item skill-item--strong">PRD</li>
+            <li class="skill-item skill-item--strong">Sales Training</li>
             <li class="skill-item">Epics &amp; User Stories (Jira)</li>
             <li class="skill-item">Confluence Documentation</li>
             <li class="skill-item">Roadmapping</li>
@@ -340,10 +406,12 @@
 
         <!-- Engineering & Tools -->
         <div class="skill-group">
-          <p class="skill-group__label">Engineering &amp; Tools</p>
-          <ul class="skill-group__items" role="list">
+          <p class="skill-group__label" data-i18n="sk2.label">Engineering &amp; Tools</p>
+          <ul class="skill-group__items" role="list" data-i18n="sk2.items">
             <li class="skill-item skill-item--strong">Claude</li>
+            <li class="skill-item skill-item--strong">Claude Code &amp; AI Agents</li>
             <li class="skill-item skill-item--strong">Python</li>
+            <li class="skill-item">LLMs &amp; Generative AI</li>
             <li class="skill-item">ProAlpha ERP</li>
             <li class="skill-item">Microsoft Office</li>
             <li class="skill-item">Figma</li>
@@ -352,13 +420,13 @@
 
         <!-- Languages -->
         <div class="skill-group">
-          <p class="skill-group__label">Languages</p>
+          <p class="skill-group__label" data-i18n="sk3.label">Languages</p>
           <div class="skill-group__items">
 
             <div class="lang-item">
               <div class="lang-item__header">
-                <span class="lang-item__name">Arabic</span>
-                <span class="lang-item__level">Native</span>
+                <span class="lang-item__name" data-i18n="ln.ar">Arabic</span>
+                <span class="lang-item__level" data-i18n="lv.native">Native</span>
               </div>
               <div class="lang-item__bar">
                 <div class="lang-item__fill" style="width: 100%"></div>
@@ -367,8 +435,8 @@
 
             <div class="lang-item">
               <div class="lang-item__header">
-                <span class="lang-item__name">German</span>
-                <span class="lang-item__level">Fluent</span>
+                <span class="lang-item__name" data-i18n="ln.de">German</span>
+                <span class="lang-item__level" data-i18n="lv.fluent">Fluent</span>
               </div>
               <div class="lang-item__bar">
                 <div class="lang-item__fill" style="width: 92%"></div>
@@ -377,8 +445,8 @@
 
             <div class="lang-item">
               <div class="lang-item__header">
-                <span class="lang-item__name">English</span>
-                <span class="lang-item__level">Fluent</span>
+                <span class="lang-item__name" data-i18n="ln.en">English</span>
+                <span class="lang-item__level" data-i18n="lv.fluent">Fluent</span>
               </div>
               <div class="lang-item__bar">
                 <div class="lang-item__fill" style="width: 92%"></div>
@@ -387,7 +455,7 @@
 
             <div class="lang-item">
               <div class="lang-item__header">
-                <span class="lang-item__name">Spanish</span>
+                <span class="lang-item__name" data-i18n="ln.es">Spanish</span>
                 <span class="lang-item__level">B1</span>
               </div>
               <div class="lang-item__bar">
@@ -410,35 +478,35 @@
   <section class="section section--alt" id="extras" aria-labelledby="extras-title">
     <div class="wrap">
       <div class="section__header">
-        <h2 class="section__title" id="extras-title">Credentials &amp; <em>Community</em></h2>
+        <h2 class="section__title" id="extras-title" data-i18n="extras.title">Credentials &amp; <em>Community</em></h2>
       </div>
 
       <div class="extras__grid" data-reveal>
 
         <article class="extra-entry">
-          <p class="extra-entry__date">Oct 2024</p>
+          <p class="extra-entry__date" data-i18n="x1.date">Oct 2024</p>
           <p class="extra-entry__title">Product Management Professional Certificate</p>
-          <p class="extra-entry__body">
-            Issued by Aha! Software. Curriculum covered product lifecycle management,
-            product roadmapping, and strategic product development.
+          <p class="extra-entry__body" data-i18n="x1.body">
+            Issued by Aha! Software. Course content: product life cycle, product roadmapping,
+            and strategy development.
           </p>
         </article>
 
         <article class="extra-entry">
-          <p class="extra-entry__date">Sep 2023 — Present</p>
+          <p class="extra-entry__date" data-i18n="x2.date">Sep 2023 — Present</p>
           <p class="extra-entry__title">Erasmus Student Network</p>
-          <p class="extra-entry__body">
-            Volunteer organiser at TU Dortmund. Planned, coordinated, and ran 15+ events
-            for 200+ incoming Erasmus exchange students, fostering cultural exchange across the campus community.
+          <p class="extra-entry__body" data-i18n="x2.body">
+            Volunteer organiser at TU Dortmund. Planned, organised and executed 15+ events
+            for 200+ Erasmus exchange students to foster the cultural engagement of students.
           </p>
         </article>
 
         <article class="extra-entry">
           <p class="extra-entry__date">Jun 2012</p>
-          <p class="extra-entry__title">FameLab — Science Communication</p>
-          <p class="extra-entry__body">
-            Ranked in the Top 10 out of 250+ participants at the Egyptian national
-            FameLab competition, presenting complex scientific topics in under 3 minutes.
+          <p class="extra-entry__title" data-i18n="x3.title">FameLab — Science Communication</p>
+          <p class="extra-entry__body" data-i18n="x3.body">
+            Ranked in the Top 10 out of 250+ participants at the Egyptian
+            FameLab competition, presenting scientific topics in under 3 minutes.
           </p>
         </article>
 
@@ -453,14 +521,14 @@
   ====================================================================== -->
   <section class="section contact" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
-      <h2 class="contact__headline" id="contact-title" data-reveal>
+      <h2 class="contact__headline" id="contact-title" data-reveal data-i18n="contact.headline">
         Let's<br><em>connect.</em>
       </h2>
 
       <div class="contact__links" data-reveal>
 
         <a class="contact__link" href="mailto:andrew.emad.a@gmail.com">
-          <span class="contact__link-label">Email</span>
+          <span class="contact__link-label" data-i18n="contact.email">Email</span>
           <span class="contact__link-value">andrew.emad.a@gmail.com</span>
           <span class="contact__link-arrow" aria-hidden="true">→</span>
         </a>
@@ -470,7 +538,6 @@
           <span class="contact__link-value">linkedin.com/in/ag1992</span>
           <span class="contact__link-arrow" aria-hidden="true">→</span>
         </a>
-
 
       </div>
     </div>
@@ -483,9 +550,14 @@
     <div class="wrap footer__inner">
       <p class="footer__copy">© 2026 Andrew Gabriel</p>
 
-      <p class="footer__version">v1.05.0</p>
+      <p class="footer__version">v1.06.0</p>
     </div>
   </footer>
+
+  <!-- =====================================================================
+       Language switch (EN / DE) — must load before the quiz script
+  ====================================================================== -->
+  <script src="i18n.js"></script>
 
   <!-- =====================================================================
        Scroll Reveal
@@ -512,6 +584,44 @@
   </script>
 
   <!-- =====================================================================
+       Video click-to-play (embeds load only after the visitor clicks)
+  ====================================================================== -->
+  <script>
+    (function () {
+      document.querySelectorAll('[data-video]').forEach(function (card) {
+        const btn   = card.querySelector('[data-video-play]');
+        const frame = card.querySelector('.video-card__frame');
+        if (!btn || !frame) return;
+
+        btn.addEventListener('click', function () {
+          const type = card.getAttribute('data-video');
+          const id   = card.getAttribute('data-video-id');
+          let src;
+
+          if (type === 'youtube') {
+            const start = card.getAttribute('data-video-start') || '0';
+            src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) +
+                  '?autoplay=1&rel=0&start=' + encodeURIComponent(start);
+          } else {
+            src = 'https://drive.google.com/file/d/' + encodeURIComponent(id) + '/preview';
+          }
+
+          const iframe = document.createElement('iframe');
+          iframe.src = src;
+          iframe.title = btn.getAttribute('aria-label') || 'Video';
+          iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+          iframe.allowFullscreen = true;
+          iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+
+          frame.innerHTML = '';
+          frame.classList.add('is-playing');
+          frame.appendChild(iframe);
+        });
+      });
+    })();
+  </script>
+
+  <!-- =====================================================================
        Quiz Engine
   ====================================================================== -->
   <script>
@@ -522,7 +632,11 @@
       const countEl = document.querySelector('[data-quiz-count]');
       const fillEl  = document.querySelector('[data-quiz-fill]');
 
-      const QUESTIONS = [
+      // Language helper from i18n.js (falls back to English if it is missing)
+      const AG = window.AG || { t: function (k, d) { return d; }, onChange: function () {} };
+
+      // English content (German lives in i18n.js)
+      const BASE = [
         {
           image: 'images/q1.jpg',
           prompt: 'How many languages does Andrew speak?',
@@ -555,16 +669,47 @@
         }
       ];
 
+      const EN = {
+        question:  'Question',
+        next:      'Next →',
+        seeResult: 'See result →',
+        again:     'Play again',
+        complete:  'Complete',
+        notQuite:  'Not quite — it’s {k}.',
+        right:     ['Spot on.', 'Correct.', 'You know him.', 'Exactly right.', 'Nailed it.'],
+        verdicts: [
+          'We just met, didn’t we?',
+          'A promising start.',
+          'You’ve been paying attention.',
+          'Impressively close.',
+          'Almost a perfect read.',
+          'You know Andrew inside out.'
+        ]
+      };
+
       const KEYS = ['A', 'B', 'C', 'D'];
-      const RIGHT = ['Spot on.', 'Correct.', 'You know him.', 'Exactly right.', 'Nailed it.'];
-      let current = 0;
-      let score = 0;
+      let current  = 0;
+      let score    = 0;
       let answered = false;
+      let selected = null;
+      let finished = false;
+      let ui       = null;   // { list, feedback, nextBtn } of the question on screen
+
+      function str(key) { return AG.t('quiz.' + key, EN[key]); }
+
+      function getQuestions() {
+        const loc = AG.t('quiz.questions', null);
+        return BASE.map(function (q, i) {
+          return (loc && loc[i])
+            ? { image: q.image, answer: q.answer, prompt: loc[i].prompt, options: loc[i].options }
+            : q;
+        });
+      }
 
       function setProgress() {
-        const pct = (current / QUESTIONS.length) * 100;
+        const pct = (current / BASE.length) * 100;
         fillEl.style.width = pct + '%';
-        countEl.textContent = 'Question ' + (current + 1) + ' / ' + QUESTIONS.length;
+        countEl.textContent = str('question') + ' ' + (current + 1) + ' / ' + BASE.length;
       }
 
       function buildMedia(q, num) {
@@ -590,7 +735,9 @@
       function renderQuestion() {
         setProgress();
         answered = false;
-        const q = QUESTIONS[current];
+        selected = null;
+        finished = false;
+        const q = getQuestions()[current];
         stage.innerHTML = '';
 
         stage.appendChild(buildMedia(q, current + 1));
@@ -618,7 +765,7 @@
           btn.type = 'button';
           btn.className = 'quiz__option';
           btn.innerHTML = '<span class="quiz__option-key">' + KEYS[i] + '</span><span>' + opt + '</span>';
-          btn.addEventListener('click', function () { choose(i, list, feedback, nextBtn); });
+          btn.addEventListener('click', function () { choose(i); });
           li.appendChild(btn);
           list.appendChild(li);
         });
@@ -635,71 +782,79 @@
         nextBtn.type = 'button';
         nextBtn.className = 'quiz__next';
         nextBtn.hidden = true;
-        nextBtn.textContent = current === QUESTIONS.length - 1 ? 'See result →' : 'Next →';
+        nextBtn.textContent = current === BASE.length - 1 ? str('seeResult') : str('next');
         nextBtn.addEventListener('click', function () {
           current++;
-          if (current < QUESTIONS.length) renderQuestion();
+          if (current < BASE.length) renderQuestion();
           else renderResult();
         });
         actions.appendChild(nextBtn);
 
         body.appendChild(actions);
         stage.appendChild(body);
+
+        ui = { list: list, feedback: feedback, nextBtn: nextBtn };
       }
 
-      function choose(i, list, feedback, nextBtn) {
-        if (answered) return;
-        answered = true;
-        const q = QUESTIONS[current];
-        const buttons = list.querySelectorAll('.quiz__option');
+      // Paint the answered state (no scoring — also used when the language changes)
+      function showAnswer(i) {
+        const q = getQuestions()[current];
 
-        buttons.forEach(function (b, bi) {
+        ui.list.querySelectorAll('.quiz__option').forEach(function (b, bi) {
           b.disabled = true;
           if (bi === q.answer) b.classList.add('is-correct');
           else if (bi === i) b.classList.add('is-wrong');
         });
 
         if (i === q.answer) {
-          score++;
-          feedback.textContent = RIGHT[current];
-          feedback.classList.add('is-right');
+          ui.feedback.textContent = str('right')[current];
+          ui.feedback.classList.add('is-right');
         } else {
-          feedback.textContent = 'Not quite — it’s ' + KEYS[q.answer] + '.';
-          feedback.classList.add('is-wrong');
+          ui.feedback.textContent = str('notQuite').replace('{k}', KEYS[q.answer]);
+          ui.feedback.classList.add('is-wrong');
         }
-        nextBtn.hidden = false;
+        ui.nextBtn.hidden = false;
+      }
+
+      function choose(i) {
+        if (answered) return;
+        answered = true;
+        selected = i;
+        if (i === getQuestions()[current].answer) score++;
+        showAnswer(i);
       }
 
       function renderResult() {
+        finished = true;
         fillEl.style.width = '100%';
-        countEl.textContent = 'Complete';
+        countEl.textContent = str('complete');
         stage.innerHTML = '';
-
-        const verdicts = [
-          'We just met, didn’t we?',
-          'A promising start.',
-          'You’ve been paying attention.',
-          'Impressively close.',
-          'Almost a perfect read.',
-          'You know Andrew inside out.'
-        ];
 
         const result = document.createElement('div');
         result.className = 'quiz__result';
         result.innerHTML =
-          '<p class="quiz__score">' + score + '<span> / ' + QUESTIONS.length + '</span></p>' +
-          '<p class="quiz__verdict">' + verdicts[score] + '</p>';
+          '<p class="quiz__score">' + score + '<span> / ' + BASE.length + '</span></p>' +
+          '<p class="quiz__verdict">' + str('verdicts')[score] + '</p>';
 
         const restart = document.createElement('button');
         restart.type = 'button';
         restart.className = 'quiz__restart';
-        restart.textContent = 'Play again';
+        restart.textContent = str('again');
         restart.addEventListener('click', function () {
           current = 0; score = 0; renderQuestion();
         });
         result.appendChild(restart);
         stage.appendChild(result);
       }
+
+      // Re-render in place when the visitor flips EN / DE, keeping progress and score
+      AG.onChange(function () {
+        if (finished) { renderResult(); return; }
+        const wasAnswered = answered;
+        const sel = selected;
+        renderQuestion();
+        if (wasAnswered) { answered = true; selected = sel; showAnswer(sel); }
+      });
 
       renderQuestion();
     })();
