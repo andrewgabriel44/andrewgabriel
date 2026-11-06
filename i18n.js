@@ -31,7 +31,7 @@
     'nav.contact':    'Kontakt',
 
     /* Hero */
-    'hero.kicker': 'Internationaler Produktmanager',
+    'hero.kicker': 'Produktmanager',
 
     /* Milestones */
     'journey.title': '<em>Meilensteine</em>',
@@ -43,11 +43,10 @@
     'tl3.text':  'Erasmus Student Network, TU Dortmund — Veranstaltungen für internationale Austauschstudierende organisiert.',
     'tl4.title': 'M.Sc. Wirtschaftsingenieurwesen',
     'tl4.text':  'TU Dortmund — Brücke zwischen Ingenieurwesen, Unternehmensstrategie und Systemdenken.',
-    'tl5.title': 'Mannschaftskapitän',
-    'tl5.text':  'Kapitän der Herren 2 — Führung auf und neben dem Platz.',
+    'tl5.title': 'Mannschaftführer',
+    'tl5.text':  'Kapitän der Herren 2',
 
     /* Quiz — static parts */
-    'quiz.kicker': 'Interaktiv',
     'quiz.title':  'Lerne Andrew in <em>5 Fragen</em> kennen',
 
     /* Quiz — script strings */
@@ -91,7 +90,6 @@
 
     /* Videos */
     'videos.title': '<em>Videos</em>',
-    'videos.note':  'Beim Klick wird das Video von YouTube bzw. Google Drive geladen.',
     'v1.title': 'FameLab-Wettbewerb',
     'v1.text':  'Präsentation eines wissenschaftlichen Themas in unter 3 Minuten — Top 10 von 250+ Teilnehmern.',
     'v1.link':  'Auf YouTube ansehen ↗',
@@ -104,10 +102,7 @@
     /* About */
     'about.title': 'Über mich',
     'about.lead':
-      'Ich verbinde technisches Ingenieurwesen mit strategischem Produktdenken. ' +
-      'Als Berechnungsingenieur für Automobil-OEMs gestartet, habe ich in das Produktmanagement ' +
-      'gewechselt — und bringe eine Kombination aus <em>Systemdenken</em> und ' +
-      'kaufmännischem Verständnis in jedes Produkt ein, das ich verantworte.',
+      'Ich schlage eine Brücke zwischen technischer Entwicklung und strategischem Produktdenken. Ich habe als Simulationsingenieur bei Automobilherstellern angefangen und bin dann ins Produktmanagement gewechselt – dabei bringe ich bei jedem Produkt, das ich entwickle, eine Kombination aus systemischem Denken und wirtschaftlichem Verständnis ein.',
     'about.langLabel': 'Sprachen',
     'about.langValue': 'Arabisch · Deutsch · Englisch · Spanisch',
     'about.bgLabel':   'Ausbildung',
